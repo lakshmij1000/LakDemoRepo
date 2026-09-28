@@ -1,5 +1,6 @@
 """Rebuild dashboard.html from stock_data.csv. Usage: python3 build_dashboard.py"""
 import csv, json, os
+print("Hello World")
 d = os.path.dirname(os.path.abspath(__file__))
 with open(os.path.join(d, "stock_data.csv")) as f:
     rows = [{"symbol": r["symbol"], "name": r["name"], "price": float(r["price"]),
